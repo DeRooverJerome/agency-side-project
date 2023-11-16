@@ -1,0 +1,31 @@
+.resume {
+  @include container;
+}
+
+.resume_container {
+  margin-top: 80px;
+  display: flex;
+  grid-column: 3/13;
+  gap: 50px;
+
+  h2 {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    cursor: pointer;
+
+    &:hover {
+      color: #2196f3;
+    }
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

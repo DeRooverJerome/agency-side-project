@@ -1,0 +1,29 @@
+// FONTS ROBOTO 400, 500, 700
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+// FONTS ROBOTO CONDENSED 700
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+
+// MIXIN GRID
+@mixin container($max-width: 1440px) {
+  display: grid;
+  grid-template-columns:
+    minmax(5vw, 1fr) repeat(12, minmax(11px, $max-width / 12))
+    minmax(5vw, 1fr);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
